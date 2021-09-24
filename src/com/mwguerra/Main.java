@@ -262,8 +262,8 @@ public class Main {
 
     for (Order order: database.orders.all()) {
       System.out.println("-- ID: " + order.getId());
-      System.out.println("-- Cliente: " + order.getCustomer());
-      System.out.println("-- Produto: " + order.getProduct());
+      System.out.println("-- Cliente: " + order.getCustomer().getName());
+      System.out.println("-- Produto: " + order.getProduct().getDescription());
       System.out.println("-- Quantidade: " + order.getQuantity());
       System.out.println("-- Valor Total: " + order.getTotalPrice());
       System.out.println("-------------------------------------------");
